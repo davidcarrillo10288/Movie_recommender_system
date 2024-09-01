@@ -6,8 +6,8 @@ Una reconocida plataforma de Streaming, nos proporciona de toda su data sobre la
 
 Como científicos de datos, hemos diseñado varios métodos de recomendación de películas, con la finalidad de poder determinar cual es el que nos brinda el mejor desempeño y calidad al momento de que el usuario interactúa en la plataforma. Entre los métodos utilizados están los siguientes:
 
-1. * Recomendador no personalizado
+  1. Recomendador no personalizado
 
-2. * Recomendador Content-based
+  2. Recomendador Content-based
 
-3. * Recomendador Collaborative filtering
+  3. Recomendador Collaborative filtering
