@@ -2,6 +2,10 @@
 
 Una reconocida plataforma de Streaming, nos proporciona de toda su data sobre las películas en su sistema, con la finalidad de poder crearle un recomendador de películas virtual. De esta manera el público objetivo podrá interactuar con la platadorma de forma más amigable.
 
+![Imagen de WhatsApp 2024-09-02 a las 03 04 10_73d5ff2d](https://github.com/user-attachments/assets/69595d97-26ee-4ba9-bba0-521ca8207b3b)
+
+![Imagen de WhatsApp 2024-09-02 a las 03 04 24_0e2c42c4](https://github.com/user-attachments/assets/2b181a3d-bf84-4a33-ac0a-ca96e31b31ad)
+
 ![image](https://github.com/user-attachments/assets/ad2c1308-59bc-487f-9438-11303ad0db75)
 
 Como científicos de datos, hemos diseñado varios métodos de recomendación de películas, con la finalidad de poder determinar cual es el que nos brinda el mejor desempeño y calidad al momento de que el usuario interactúa en la plataforma. Entre los métodos utilizados están los siguientes:
