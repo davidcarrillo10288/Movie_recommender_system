@@ -14,4 +14,5 @@ Como científicos de datos, hemos diseñado varios métodos de recomendación de
 
 ## ARQUITECTURA DEL PROYECTO
 
-![image](https://github.com/user-attachments/assets/a4031e4f-673a-45e6-9e61-ee9755fdb4e5)
+![image](https://github.com/user-attachments/assets/51772ecd-a5d4-481b-98f9-8aabf2213fed)
+
