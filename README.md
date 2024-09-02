@@ -106,7 +106,7 @@ En el Notebook quedó representado de esta manera:
 
 ### 5. DEPLOYMENT EN STREAMLIT
 
-En esta ocasión, hacemos nuestro deployment en streamlit, para esto utilizamos las bases de datos ya creadas para poder desarrollar nuestro modelo en streamlit. Además se hace uso de la API de TMDB, donde se pueden conseguir información de millones de películas.
+En esta ocasión, hacemos nuestro deployment en streamlit, para esto utilizamos las bases de datos ya creadas para poder desarrollar nuestro modelo en streamlit. Además se hace uso de la API de TMDB, donde se puede conseguir información de millones de películas.
 
 ![image](https://github.com/user-attachments/assets/79e31aae-b9f0-437b-ad29-ba03cffa130c)
 
