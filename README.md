@@ -91,6 +91,7 @@ En el Notebook quedó representado de esta manera:
 Esta métrica de Similitud, analiza la similitud existente entre dos vectores en un espacio que posee un producto interior con el que se evalúa el valor del coseno del ángulo comprendido entre ellos. Para este caso, realizamos el análisis con los géneros de las películas, en los cuales, vectorizamos cada uno de ellos y los comparamos con todos los demás, consiguiendo valores de similitud de coseno para todos los títulos de películas.
 
 * Se procedió a vectorizar nuestra variable en el dataframe, mediante el cual conseguiremos valores de similitud de coseno para todos los títulos existentes.
+  
   ![image](https://github.com/user-attachments/assets/b07811c1-1505-48af-8337-4029d5d18c56)
 
 * Como podemos observar, conseguimos una matriz **cosine_sim**, en la cual están todos los valores de similitud de coseno para todas las variables.
@@ -102,6 +103,22 @@ Se aplicó la siguiente función con la finalidad de poder conseguir el TOP 10 d
 En el Notebook quedó representado de esta manera:
 
 ![image](https://github.com/user-attachments/assets/7aea50c4-2c6e-4a5c-884e-ecafe7cafb27)
+
+### 5. DEPLOYMENT EN STREAMLIT
+
+En esta ocasión, hacemos nuestro deployment en streamlit, para esto utilizamos las bases de datos ya creadas para poder desarrollar nuestro modelo en streamlit. Además se hace uso de la API de TMDB, donde se pueden conseguir información de millones de películas.
+
+![image](https://github.com/user-attachments/assets/79e31aae-b9f0-437b-ad29-ba03cffa130c)
+
+![image](https://github.com/user-attachments/assets/1e2f558b-119b-4e4a-a361-d213ea3e0b2c)
+
+Con este API, se pudo conseguir información de las películas, las cuales nos sirvieron para poder mostrarlo en nuestro recomendador de películas en STREAMLIT, y de esta manera nos quedo un diseño más interactivo y llamativo para el público.
+
+Los posters de las imágenes le da un PLUS a nuestro recomendador, el cual es muy informativo y atractivo para el usuario. A continuación, mostramos el diseño final de nuestro recomendador, ya puesto en producción.
+
+* Les comparto el Link en streamlit: https://movie-recommender-system-ml.streamlit.app/
+* ![image](https://github.com/user-attachments/assets/e53884e1-c806-4de9-ac13-16e1fca2a144)
+
 
 
 
