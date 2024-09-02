@@ -72,15 +72,19 @@ Para este tipo de recomendador, basado en contenido, se pueden utilizar muchos m
 
 Esta métrica de Similitud, analiza dos conjuntos de elementos, en los cuales realiza una comparación entre la intersección y la unión de los elementos.
 
+
 ![image](https://github.com/user-attachments/assets/276de59d-1ac5-4558-94dd-8a9d7eb8f4ac)
+
 
 Se aplicó la siguiente función con la finalidad de poder conseguir el TOP 10 de películas mejor rankeadas de acuerdo a nuestro criterio de SIMILITUD DE JACCARD
 
 ![image](https://github.com/user-attachments/assets/6118635e-57cf-4226-b4c1-79036a5e8347)
 
+
 En el Notebook quedó representado de esta manera:
 
 ![image](https://github.com/user-attachments/assets/f2c0ea52-d52d-49b1-9037-cd3b7861a1b6)
+
 
 ###     4.2.2 SIMILITUD DE COSENO
 
