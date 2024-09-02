@@ -64,10 +64,48 @@ En el Notebook quedó representado de esta manera:
 
 ![image](https://github.com/user-attachments/assets/20ce1e75-4b09-484c-851d-1fc8c3cff848)
 
-
-
-
 ###   4.2 CONTENT - BASED
+
+Para este tipo de recomendador, basado en contenido, se pueden utilizar muchos métodos que nos evaluen la similitud o agrupación por ciertos criterios de las películas. En esta ocasión, se hace uso del método basado en SIMILITUD DE JACCARD y en SIMILITUD DE COSENO.
+
+###     4.2.1 SIMILITUD DE JACCARD:
+
+Esta métrica de Similitud, analiza dos conjuntos de elementos, en los cuales realiza una comparación entre la intersección y la unión de los elementos.
+
+![image](https://github.com/user-attachments/assets/276de59d-1ac5-4558-94dd-8a9d7eb8f4ac)
+
+Se aplicó la siguiente función con la finalidad de poder conseguir el TOP 10 de películas mejor rankeadas de acuerdo a nuestro criterio de SIMILITUD DE JACCARD
+
+![image](https://github.com/user-attachments/assets/6118635e-57cf-4226-b4c1-79036a5e8347)
+
+En el Notebook quedó representado de esta manera:
+
+![image](https://github.com/user-attachments/assets/f2c0ea52-d52d-49b1-9037-cd3b7861a1b6)
+
+###     4.2.2 SIMILITUD DE COSENO
+
+Esta métrica de Similitud, analiza la similitud existente entre dos vectores en un espacio que posee un producto interior con el que se evalúa el valor del coseno del ángulo comprendido entre ellos. Para este caso, realizamos el análisis con los géneros de las películas, en los cuales, vectorizamos cada uno de ellos y los comparamos con todos los demás, consiguiendo valores de similitud de coseno para todos los títulos de películas.
+
+* Se procedió a vectorizar nuestra variable en el dataframe, mediante el cual conseguiremos valores de similitud de coseno para todos los títulos existentes.
+  ![image](https://github.com/user-attachments/assets/b07811c1-1505-48af-8337-4029d5d18c56)
+
+* Como podemos observar, conseguimos una matriz **cosine_sim**, en la cual están todos los valores de similitud de coseno para todas las variables.
+
+Se aplicó la siguiente función con la finalidad de poder conseguir el TOP 10 de películas mejor rankeadas de acuerdo a nuestro criterio de SIMILITUD DE COSENO
+
+![image](https://github.com/user-attachments/assets/e09f3dfc-7f8c-42e3-a274-f632ecff6212)
+
+En el Notebook quedó representado de esta manera:
+
+![image](https://github.com/user-attachments/assets/7aea50c4-2c6e-4a5c-884e-ecafe7cafb27)
+
+
+
+
+
+
+
+
 
 
 
