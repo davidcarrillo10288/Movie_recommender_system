@@ -11,3 +11,7 @@ Como científicos de datos, hemos diseñado varios métodos de recomendación de
   2. Recomendador Content-based
 
   3. Recomendador Collaborative filtering
+
+## ARQUITECTURA DEL PROYECTO
+
+![image](https://github.com/user-attachments/assets/a4031e4f-673a-45e6-9e61-ee9755fdb4e5)
