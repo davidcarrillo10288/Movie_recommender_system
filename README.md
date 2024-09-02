@@ -48,6 +48,29 @@ Es muy importante analizar los datos de nuestro dataframe, con la finalidad de p
 
 ![image](https://github.com/user-attachments/assets/ada10bbc-f6df-4807-b6c0-506a4a6c54cf)
 
+### 4. RECOMENDADOR DE PELÍCULAS
+
+###   4.1 NO PERSONALIZADO
+
+Para este proceso se desarrollo un recomendador de películas, basado en el promedio bayesiano
+
+![image](https://github.com/user-attachments/assets/9a34c91f-2f7d-4024-b4f5-da4d53a3e454)
+
+Se aplicó la siguiente función con la finalidad de poder conseguir el TOP 10 de películas mejor rankeadas de acuerdo a nuestro criterio bayesiano
+
+![image](https://github.com/user-attachments/assets/e2491222-633b-4eb9-a9ff-658c5efeb02f)
+
+En el Notebook quedó representado de esta manera:
+
+![image](https://github.com/user-attachments/assets/20ce1e75-4b09-484c-851d-1fc8c3cff848)
+
+
+
+
+###   4.2 CONTENT - BASED
+
+
+
 
 
 
