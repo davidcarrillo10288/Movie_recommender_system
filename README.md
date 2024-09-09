@@ -120,8 +120,10 @@ Con este API, se pudo conseguir información de las películas, las cuales nos s
 
 Los posters de las imágenes le da un PLUS a nuestro recomendador, el cual es muy informativo y atractivo para el usuario. A continuación, mostramos el diseño final de nuestro recomendador, ya puesto en producción.
 
-* Les comparto el Link en streamlit: https://movie-recommender-system-ml.streamlit.app/
+* Les comparto el Link en streamlit:
+* Versión Final: https://movie-recommender-play2.app/
 * ![image](https://github.com/user-attachments/assets/e53884e1-c806-4de9-ac13-16e1fca2a144)
+  
 
 
 
