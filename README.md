@@ -1,5 +1,7 @@
 # MOVIE RECOMMENDER SYSTEM
 
+Link: https://movie-recommender-play2.streamlit.app/
+
 Una reconocida plataforma de Streaming, nos proporciona de toda su data sobre las películas en su sistema, con la finalidad de poder crearle un recomendador de películas virtual. De esta manera el público objetivo podrá interactuar con la platadorma de forma más amigable.
 
 ![Imagen de WhatsApp 2024-09-02 a las 03 04 10_73d5ff2d](https://github.com/user-attachments/assets/69595d97-26ee-4ba9-bba0-521ca8207b3b)
@@ -121,7 +123,7 @@ Con este API, se pudo conseguir información de las películas, las cuales nos s
 Los posters de las imágenes le da un PLUS a nuestro recomendador, el cual es muy informativo y atractivo para el usuario. A continuación, mostramos el diseño final de nuestro recomendador, ya puesto en producción.
 
 * Les comparto el Link en streamlit:
-* Versión Final: https://movie-recommender-play2.app/
+* Versión Final: [https://movie-recommender-play2.app/](https://movie-recommender-play2.streamlit.app/)
 * ![image](https://github.com/user-attachments/assets/e53884e1-c806-4de9-ac13-16e1fca2a144)
   
 
