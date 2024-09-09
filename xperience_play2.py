@@ -84,8 +84,8 @@ if option:
     # Filtrar el DataFrame según la opción seleccionada
     df_title_tmdbId = df_final.groupby('title')['tmdbId'].first().reset_index()
     api_key = '53881244403c42cb58048b62e1d8fa71'
-    tmdb_id = df_title_tmdbId[df_title_tmdbId['title'] == f"{option}"]['tmdbId'].tolist()[0]
-    url = f'https://api.themoviedb.org/3/movie/{tmdb_id}?api_key={api_key}'
+    tmdb_id_option = df_title_tmdbId[df_title_tmdbId['title'] == f"{option}"]['tmdbId'].tolist()[0]
+    url = f'https://api.themoviedb.org/3/movie/{tmdb_id_option}?api_key={api_key}'
 
     response = requests.get(url)
 
@@ -147,7 +147,7 @@ if response.status_code == 200:
             # Colocamos la información en la segunda columna
             with col2:
                 st.link_button(f"**TITLE:** {movie_data.get('title', 'Título no disponible')}", 
-                               f"https://www.themoviedb.org/movie/{tmdb_id}", use_container_width=True)
+                               f"https://www.themoviedb.org/movie/{tmdb_id_option}", use_container_width=True)
                 st.write(f"**GENRES:** {', '.join(genre['name'] for genre in movie_data.get('genres', []))}")
                 st.write(f"**OVERVIEW:** {movie_data.get('overview', 'Descripción no disponible')}")
                 st.write(f"**RELEASE DATE:** {movie_data.get('release_date', 'Fecha de lanzamiento no disponible')}")
@@ -254,25 +254,26 @@ tmdbId_coseno = []
 # Diccionario para mantener la relación entre poster URL y TMDB ID
 poster_dict = {}
 for i, valor in enumerate(df_similitud_coseno['tmdbId'].tolist()):
-    if len(poster_dict) >=10:
-        break
-    api_key = '53881244403c42cb58048b62e1d8fa71'
-    url = f'https://api.themoviedb.org/3/movie/{valor}?api_key={api_key}'
-    response = requests.get(url)
-    if response.status_code == 200:
-        movie_data_2 = response.json()
-    else:
-        print("Error en la solicitud:", response.status_code)
-
-    if 'poster_path' in movie_data_2 and movie_data_2["poster_path"]:
-        poster_url_type = 'https://image.tmdb.org/t/p/w500' + movie_data_2["poster_path"]
-
-        # Agregar el poster y el TMDB ID al diccionario si el poster URL no está ya en el diccionario
-        if poster_url_type not in poster_dict:
-                poster_dict[poster_url_type] = valor
-    # poster_url_2 = 'https://image.tmdb.org/t/p/w500' + movie_data_2['poster_path']
-    # poster_recomendadas.append(poster_url_2)
-    # tmdbId_coseno.append(valor)
+    if valor != tmdb_id_option:
+        if len(poster_dict) >=10:
+            break
+        api_key = '53881244403c42cb58048b62e1d8fa71'
+        url = f'https://api.themoviedb.org/3/movie/{valor}?api_key={api_key}'
+        response = requests.get(url)
+        if response.status_code == 200:
+            movie_data_2 = response.json()
+        else:
+            print("Error en la solicitud:", response.status_code)
+    
+        if 'poster_path' in movie_data_2 and movie_data_2["poster_path"]:
+            poster_url_type = 'https://image.tmdb.org/t/p/w500' + movie_data_2["poster_path"]
+    
+            # Agregar el poster y el TMDB ID al diccionario si el poster URL no está ya en el diccionario
+            if poster_url_type not in poster_dict:
+                    poster_dict[poster_url_type] = valor
+        # poster_url_2 = 'https://image.tmdb.org/t/p/w500' + movie_data_2['poster_path']
+        # poster_recomendadas.append(poster_url_2)
+        # tmdbId_coseno.append(valor)
 
 # Centrar contenido y ajustar el tamaño
 img_width = 140  # Tamaño uniforme para las imágenes
