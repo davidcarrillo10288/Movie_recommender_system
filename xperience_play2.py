@@ -54,19 +54,13 @@ url_vectorizer = 'https://github.com/davidcarrillo10288/Movie_recommender_system
 df_vectorizer = pd.read_csv(url_vectorizer)
 
 ## Descargando la matriz similitud de coseno .npy
-url_cosine = 'https://www.dropbox.com/scl/fi/cowya5xy57jyk8f9mzx6c/array_16.npz?rlkey=jf608oxzhnq8wkea29j0ogyc8&e=1&st=0y7p45ap&dl=1'
-# output_cosine = 'array.npz'
-# gdown.download(url_cosine, output_cosine, fuzzy=True, quiet=False)
-# data = np.load(output_cosine)
-# cosine = data['arr']
-# Descargar el archivo
-response = requests.get(url_cosine)
+url_cosine = 'https://github.com/davidcarrillo10288/Movie_recommender_system/raw/master/array_16.npz'
 
+response = requests.get(url_cosine)
 # Verifica si la descarga fue exitosa
 if response.status_code == 200:
     # Cargar el archivo .npz
-    data = np.load(BytesIO(response.content))
-    
+    data = np.load(BytesIO(response.content)) 
 # Accede a los datos en el archivo
 cosine = data['arr']  
 
@@ -88,40 +82,6 @@ if option:
     url = f'https://api.themoviedb.org/3/movie/{tmdb_id_option}?api_key={api_key}'
 
     response = requests.get(url)
-
-
-    # if response.status_code == 200:
-    #     movie_data = response.json()
-    # else:
-    #     print("Error en la solicitud:", response.status_code)
-    
-#     # Verificar si 'poster_path' está disponible
-#     if movie_data.get('poster_path'):
-
-#         # Creamos 2 columnas: una para la imagen, otra para la descripción
-#         col1, col2 = st.columns([1, 3], vertical_alignment="center")  # [1, 2] indica que la segunda columna será el doble de ancha que la primera
-
-#         # Colocamos el póster en la primera columna
-#         with col1:
-#             poster_url = 'https://image.tmdb.org/t/p/w500' + movie_data['poster_path']
-#             st.image(poster_url, width=200)
-
-#         # Colocamos la información en la segunda columna
-#         with col2:
-#             st.link_button(f"**TITLE:** {df_final[df_final['tmdbId'] == tmdb_id]['title'].tolist()[0]}", 
-#                         f"https://www.themoviedb.org/movie/{tmdb_id}", use_container_width=True)
-#             st.write(f"**GENRES:** {df_final[df_final['tmdbId'] == tmdb_id]['genres'].tolist()[0]}")
-#             st.write(f"**OVERVIEW:** {movie_data['overview']}")
-#             st.write(f"**RELEASE DATE:** {movie_data['release_date']}")
-#             st.write(f"**DURATION:** {movie_data['runtime']} min")
-#             st.write(f"**RANKING:** ⭐({movie_data['popularity']})")
-#     else:
-#         # Mostrar mensaje si no hay póster disponible
-#         st.write("La información de la película no está disponible para mostrar. Por favor, seleccione otra película.")
-
-# else:
-#     st.write('*** Selecciona una película ***')
-
 
     # Verificamos el estado de la respuesta
     if response.status_code == 200:
